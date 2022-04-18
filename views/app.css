@@ -1,0 +1,153 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --grisblanco: #DFE9F3;
+    --morado: #3f51b5;
+    --moradoGris : #223882;
+    --plomo:  #2C3E50 ;
+}
+
+html, body{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;    
+}
+
+*, *::before , *::after{
+    box-sizing: inherit;
+}
+
+.container{
+    min-height: 100vh;
+    min-width: 100%;
+    margin: 0px;
+    display: flex;
+}
+
+.partOne{
+    height: 773px;
+    width: 1000px;
+    margin: 0px;
+    background-color: var(--grisblanco);
+    background-image: url(../public/img/inicio.png);
+    display: flex;
+}
+
+.wave{
+    margin-top: 550px;
+}
+
+.partTwo{
+    background-color: var(--grisblanco);
+    height: 773px;
+    width: 600px;
+}
+
+.form{  
+    height: 723px;
+    margin: 25px;
+    width: 550px;   
+}
+
+.shadow{
+    box-shadow: 0px 5px 15px 0px rgba(112, 112,112, 0.54);
+    background-color: var(--blanco);
+    border-radius: 1px;
+    padding: 0.5px;
+}
+
+.form_login{
+    margin: auto;
+    margin-top: 150px;
+    width: 450px;
+    color: var(--plomo);
+}
+
+.form_login > h1{
+    margin-bottom: 50px;
+}
+
+.form_login > input {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0px;
+    height: 46px;
+    width: 450px;
+    outline: none;
+}
+
+.container_label{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.label_right{
+    margin-left: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#hidden{
+    position: relative;
+    display: none;
+    margin-left: 20px;
+}
+
+
+#show_id{
+    position: relative;
+    margin-left: 20px;
+    display: block;
+}
+
+.text{
+    margin-top: 4px;
+    color: var(--morado);
+}
+
+.show{
+    all: unset;
+    cursor: pointer;   
+    display: flex;
+    height: 20px;
+    width: 40px;
+}
+
+.form_login > h1 {
+    font-size: 30px;
+}
+
+ input:focus{
+   border: 2px solid var(--morado);
+}
+
+input[type=button]{
+    background: var(--morado);
+    border: none;
+    margin-top: 40px;
+    color: var(--blanco);
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 15px;
+} 
+
+input[type=button]:hover{
+    cursor: pointer;
+    background: var(--moradoGris);
+}
+
+.footer{
+    margin-top: 200px;
+    font-size: 12px;
+}
+
+
+
+
+
